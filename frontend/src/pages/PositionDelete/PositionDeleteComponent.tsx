@@ -10,12 +10,12 @@ import { Container, Content } from './styles';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 
-interface PositionDetailComponentProps {
+interface PositionDeleteComponentProps {
 	routePath: string;
 	buttonText: string;
 }
 
-const PositionDetailComponent: React.FC<PositionDetailComponentProps> = ({ 
+const PositionDeleteComponent: React.FC<PositionDeleteComponentProps> = ({ 
 		routePath, 
 		buttonText
 	}) => {
@@ -27,7 +27,7 @@ const PositionDetailComponent: React.FC<PositionDetailComponentProps> = ({
 			<Header to={routePath} buttonText={buttonText} />
 
 			<Content>
-				<h1><span>Detalhe da Vaga</span></h1>
+				<h1><span>Remover</span></h1>
 			</Content>
 
 			<Footer />
@@ -35,4 +35,4 @@ const PositionDetailComponent: React.FC<PositionDetailComponentProps> = ({
 	);
 };
 
-export default PositionDetailComponent;
+export default PositionDeleteComponent;

@@ -1,0 +1,27 @@
+type Vacancies {
+   id: ID!
+   position: String!
+   address: String!
+   type: String
+   salary: Float
+}
+
+type VacanciesDetail {
+   id: ID!
+   position: String!
+   company: String!
+   address: String!
+   type: String
+   description: String
+   salary: Float
+}
+
+type Query {
+   vacancies: [Vacancies!]!
+   vacanciesDetail(id: ID!): VacanciesDetail
+}
+
+type Mutation {
+   createVacancie(position: String!, company: String!, address: String!, type: String, description: String, salary: Float): Vacancies
+
+}

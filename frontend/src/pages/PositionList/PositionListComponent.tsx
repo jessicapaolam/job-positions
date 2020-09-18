@@ -60,12 +60,16 @@ const PositionListComponent: React.FC<PositionListComponentProps> = ({
 					  	</div>
 
 					  	<div className="icon-bar">
-					  		<FaPencilAlt />
-					  		<FaTrashAlt />
+							<div onClick={() => history.push("/position-edit")} className="icon">
+					  			<FaPencilAlt />
+							</div>
+							<div onClick={() => history.push("/position-delete")} className="icon">
+					  			<FaTrashAlt />
+							</div>
 					  	</div>
 					  </div>
 
-					  <div className="position">
+					  {/* <div className="position">
 					  	<div onClick={() => alert('aqui')} className="position-body">
 						  	<p className="position-title">Desenvolvedor React.js Júnior (Remoto)</p>
 						  	<p className="company-name">Plus-IT Consulting</p>
@@ -105,7 +109,7 @@ const PositionListComponent: React.FC<PositionListComponentProps> = ({
 					  		<FaPencilAlt />
 					  		<FaTrashAlt />
 					  	</div>
-					  </div>
+					  </div> */}
 
 					</div>
 				</SearchResults>

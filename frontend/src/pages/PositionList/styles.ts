@@ -98,6 +98,10 @@ export const SearchResults = styled.div`
 				margin-right: 10px;
 			}
 		}
+
+		.icon {
+			cursor: pointer;
+		}
 	}
 
 	@media (min-width: 410px) {
