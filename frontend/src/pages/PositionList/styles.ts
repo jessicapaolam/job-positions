@@ -57,10 +57,10 @@ export const SearchResults = styled.div`
 		width: 350px;
 		height: 195px;
 		border: 2px solid #D4D2D0;
-	  border-radius: 4px;
-	  background: #fff;
-	  color: #171e42;
-	  padding: 10px 15px 10px 15px;
+	 	border-radius: 4px;
+	   background: #fff;
+	   color: #171e42;
+	   padding: 10px 15px 10px 15px;
 		margin-left: 20px;
 		margin-top: 20px;
 
@@ -70,17 +70,25 @@ export const SearchResults = styled.div`
 		}
 
 		.company-name {
+			margin-top: 10px;
 			line-height: 20px;
 			margin-bottom: 0;
 		}
 
 		.company-location {
+			margin-top: 10px;
 			line-height: 20px;
 			margin-bottom: 0;
 		}
 
 		.position-description {
 			margin-top: 15px;
+			line-height: 20px;
+			font-size: 90%;
+		}
+
+		.position-salary {
+			margin-top: 30px;
 			line-height: 20px;
 			font-size: 90%;
 		}
@@ -102,6 +110,13 @@ export const SearchResults = styled.div`
 		.icon {
 			cursor: pointer;
 		}
+
+	}
+
+	.no-data {
+		margin-top: 50px;
+		margin-left: 20px;
+		font-size: 20px;
 	}
 
 	@media (min-width: 410px) {

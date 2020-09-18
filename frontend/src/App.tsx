@@ -4,15 +4,16 @@ import { BrowserRouter } from 'react-router-dom';
 import GlobalStyle from './styles/global';
 import 'antd/dist/antd.css';
 
-import AppProvider from './context';
+import { ApolloProvider } from 'react-apollo';
+import apolloClient from './services/apollo';
 
 import Routes from './routes';
 
 const App: React.FC = () => (
   <BrowserRouter>
-  	<AppProvider>
+  	<ApolloProvider client={apolloClient}>
     		<Routes />
-    </AppProvider>
+    </ApolloProvider>
 
     <GlobalStyle />
   </BrowserRouter>

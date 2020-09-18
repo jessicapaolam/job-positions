@@ -22,6 +22,6 @@ type Query {
 }
 
 type Mutation {
-   createVacancie(position: String!, company: String!, address: String!, type: String, description: String, salary: Float): Vacancies
+   createVacancie(position: String!, company: String!, address: String!, type: String, description: String, salary: Float): VacanciesDetail
 
 }

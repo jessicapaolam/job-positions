@@ -21,7 +21,7 @@ const PositionDetailComponent: React.FC<PositionDetailComponentProps> = ({
 	}) => {
 
 	const history = useHistory();
-
+	
 	return (
 		<Container>
 			<Header to={routePath} buttonText={buttonText} />
