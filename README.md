@@ -7,7 +7,9 @@ Navegue pela linha de comando até a pasta onde salva os seus projetos e clone e
   git clone https://github.com/jessicapaolam/job-positions
 ```
 
-Em seguida navegue até a pasta frontend:
+#### Para iniciar o projeto é necessário dar start no servidor do frontend e no servidor do backend:
+
+Navegue até a pasta frontend:
 
  ```
   cd frontend/
